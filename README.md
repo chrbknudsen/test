@@ -1,4 +1,3 @@
-
 ## R Markdown - automatiseret
 
 Ikke specielt…
@@ -19,9 +18,7 @@ When you click the **Knit** button a document will be generated that
 includes both content as well as the output of any embedded R code
 chunks within the document. You can embed an R code chunk like this:
 
-``` r
-summary(cars)
-```
+    summary(cars)
 
     ##      speed           dist       
     ##  Min.   : 4.0   Min.   :  2.00  
@@ -35,7 +32,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![](README_files/figure-gfm/pressure-1.png)
+![](README_files/figure-markdown_strict/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
