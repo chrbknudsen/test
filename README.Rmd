@@ -9,6 +9,8 @@ source(here::here("rmd_config.R"))
 
 ## R Markdown - automatiseret
 
+render_site kan rendere alle filer i en mappe. Og vi kan lade et andet 
+
 Ikke specielt...
 
 men det var måske så enkelt at jeg bare skulle pille i permissions allernedersti
@@ -36,3 +38,12 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r}
+library(plotly)
+p <- ggplot(data = diamonds, aes(x = cut, fill = clarity)) +
+            geom_bar(position = "dodge")
+ggplotly(p)
+```
+
