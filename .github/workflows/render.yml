@@ -18,10 +18,8 @@ jobs:
         run: |
           Rscript -e 'install.packages("rmarkdown")'
           Rscript -e 'install.packages("here")'
-      - name: install dependencies
-        run: |
-          install.packages("tidyverse")
-          install.packages("plotly")
+          Rscript -e 'install.packages("tidyverse")'
+          Rscript -e 'install.packages("plotly")'
       - name: Render README
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
       - name: Commit results
