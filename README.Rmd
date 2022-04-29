@@ -7,7 +7,7 @@ always_allow_html: true
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-#source(here::here("rmd_config.R"))
+source(here::here("rmd_config.R"))
 ```
 
 ## R Markdown - automatiseret
