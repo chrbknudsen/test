@@ -1,5 +1,5 @@
 ---
-output: github_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -8,6 +8,9 @@ source(here::here("rmd_config.R"))
 ```
 
 ## R Markdown - automatiseret
+
+Dette er en god side til markdown arbejdet.
+https://jthomasmock.github.io/rmd-nhs/#36
 
 render_site kan rendere alle filer i en mappe. Og vi kan lade et andet 
 
