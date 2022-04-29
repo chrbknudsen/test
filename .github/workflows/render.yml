@@ -18,7 +18,7 @@ jobs:
         run: |
           Rscript -e 'install.packages("rmarkdown")'
           Rscript -e 'install.packages("here")'
-          Rscript -e 'install.packages("tidyverse")'
+          Rscript -e 'install.packages("ggplot2")'
           Rscript -e 'install.packages("plotly")'
       - name: Render README
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
